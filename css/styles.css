@@ -26,8 +26,7 @@
 }
 .list {
     list-style: none;
-    margin: none;
-    padding: none;
+
 }
 
 a {
@@ -38,6 +37,17 @@ a {
 
     text-decoration: none;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+ }
 
 .page {
     font-family:var(--main-font);
@@ -55,8 +65,13 @@ img {
 
 
 /**   HEADER   **/
+.header-container {
+    align-items: center;
+  display: flex;
+}
 
 .logoweb {
+    margin-left: 40px;
     font-family:var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -69,25 +84,46 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--main-txt-color)
-}
+    color: var(--main-txt-color);
+    margin-right: 93px;
 
+}
+.header-nav {
+    margin-right: auto;
+    display: flex;
+}
+.header-list {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
 .list {
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--main-txt-color);
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link-nav {
     color: var(--akc-txt-color);
 }
 .header-link-item {
-line-height: 1.4;
-letter-spacing: 0.02em;
-color: var(--second-text-color);
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
 }
 .header-link-item:hover {
+    color:var(--akc-txt-color);
+}
+.header-link-item:focus {
     color:var(--akc-txt-color);
 }
 .list:hover {
@@ -104,7 +140,7 @@ color: var(--second-text-color);
 }
 
 .title {
-   
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -119,6 +155,7 @@ background-color: #2F303A;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
+margin-bottom: 50px;
 }
 
 .text {
@@ -143,6 +180,10 @@ color: var(--second-text-color) ;
         background-color:var(--second-text-color);
     }
 
+.listone {
+    display: flex;
+    gap: 30px;
+}
 .product-name {
     font-size: 18px;
     line-height: 2.0;
@@ -188,6 +229,9 @@ color: var(--second-text-color) ;
     background-color: var(--akc-txt-color);
     color: var(--light-txt-color);
 }
+ /* Foto  */
+
+
 .subtitle {
 font-size: 14px;
 line-height: 1.14;
