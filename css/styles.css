@@ -26,6 +26,9 @@
 }
 .list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
 }
 
@@ -65,13 +68,29 @@ img {
 
 
 /**   HEADER   **/
-.header-container {
-    align-items: center;
+.header {
+    background-color: aqua;
+}
+
+.header-nav {
+    
     display: flex;
+    align-items: center;
+    
+}
+.header-nav-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 50px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    
 }
 
 .logoweb {
-    margin-left: 40px;
+    margin-left: 215px;
     font-family:var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -85,40 +104,30 @@ img {
     font-size: 26px;
     line-height: 1.19;
     color: var(--main-txt-color);
-    margin-right: 93px;
 
 }
-.header-nav {
-    margin-right: auto;
-    display: flex;
-}
-.header-list {
-    align-items: center;
-    display: flex;
-    gap: 50px;
-}
+
 .list {
-    gap: 50px;
-    display: flex;
-    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-txt-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header-link-nav {
     color: var(--akc-txt-color);
 }
 .header-link-item {
-    margin-right: 50px;
+
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-left: 50px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+}
+.header-group {
+    
 }
 .header-link-item:hover {
     color:var(--akc-txt-color);
