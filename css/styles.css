@@ -7,10 +7,12 @@
      --main-txt-color:#212121;
      --light-txt-color: #FFFF;
      --akc-txt-color: #2196F3 ;
-     --second-text-color:#757575 ;
+     --second-text-color:#757575;
+    
 
     /* Background colours */
     --main-bg-color:#FFFFFF;
+    --secondary-background-color:#2F303A;
 
      /* Others */
 }
@@ -45,9 +47,7 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
     outline: 2px solid red;
     outline-offset: -2px;
  }
@@ -76,9 +76,7 @@ img {
     
     display: flex;
     align-items: center;
-    
 }
-
 
 .logoweb {
     margin-left: 215px;
@@ -147,11 +145,10 @@ img {
 }
 
 
-.title {
-   padding-left: 452px;
-   padding-right: 452px;
-   padding-top: 200px;
-   padding-bottom: 285px;
+  /* Index.html */
+
+.container-block {
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -160,26 +157,40 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--light-txt-color);
 background-color: #2F303A;
+position: absolute;
+width: 1600px;
+height: 605px;
+left: 0px;
+top: 80px;
 
 }
-
-.section-title {
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-margin-bottom: 50px;
+.hero {
+  padding-top: 210px;
+  padding-bottom: 270px;
+  text-align: center;
+  background-color: var(--secondary-background-color);
 }
 
-.text {
-line-height: 1.71;
-color: var(--second-text-color) ;
+.hero-title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--light-txt-color);
 }
+
 .hero-button {
+    padding: 10px 32px;
+    margin: auto;
+    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color:var(--main-bg-color);
     background-color: var(--akc-txt-color);
@@ -193,8 +204,9 @@ color: var(--second-text-color) ;
 
 .listone {
     display: flex;
-    gap: 30px;
 }
+
+
 .product-name {
     font-size: 18px;
     line-height: 2.0;
@@ -243,11 +255,27 @@ color: var(--second-text-color) ;
  /* Foto  */
 
 .subtitle {
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-txt-color);
+    margin-bottom: 10px;
+
+}
+.text {
+    width: 270px;
+   line-height: 1.71;
+   color: var(--second-text-color);
 }
 
+.post-title {
+    margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -259,8 +287,57 @@ text-transform: uppercase;
     line-height: 1.18;
     color:var(--second-text-color); 
 }
+.site-activities {
+
+}
+.site-activities-image {
+    margin-right: 30px;
+}
+.site-team-card {
+
+}
+/* Підвал сторінки */
+
+.page-footer {
+    margin: 0 auto;
+    padding: 60px 15px;
+  }
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    margin-bottom: 9px;
+  }
+  
+  .address {
+    font-style: normal;
+  }
+  .logo-second-word {
+    color: var(--primary-white-color);
+  }
+  
+  .footer-link-item {
+    text-decoration: none;
+    line-height: 1.71;
+    color: var(--footer-location-color);
+  }
+  .footer-link-location:hover,
+  .footer-link-location:focus {
+    color: var(--accent-color);
+  }
+  .footer-link-item:hover,
+  .footer-link-item:focus {
+    color: var(--accent-color);
+  }
 
 .footer {
+    padding: 60px;
     background-color: #2F303A;
 }
 
@@ -280,8 +357,8 @@ text-transform: uppercase;
     line-height: 1.19;
     color:var(--light-txt-color);
 }
-.foter-link-item:hover {
+.footer-link-item:hover {
     color: var(--akc-txt-color);
 }
-.foter-link-item:focus {
+.footer-link-item:focus {
     color: var(--akc-txt-color);}

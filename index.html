@@ -52,24 +52,24 @@
         </nav>
       </div>
     </header>
+
     <main>
       <!--Головна частина-->
-
-      <section class="title">
+      <section class="hero">
         <div class="container">
-          <h1 class="title" >Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button">Замовити послугу</button>
         </div>
       </section>
 
       <!--Особливості-->
 
-      <section>
+      <section class="section">
         <div class="container">
           <h2 hidden class="">Переваги</h2>
 
-          <ul class="listone">
-            <li>
+          <ul class="listone site-values">
+            <li class="site-values-item" >
               <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text">
                 Iдейні міркування, і навіть початок повсякденної роботи з
@@ -83,12 +83,12 @@
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="site-values-item">
               <h3 class="subtitle">ПЛАНУВАННЯ</h3>
               <p class="text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
-            </li>
+            </li class="site-values-item">
             <li>
               <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text">
@@ -100,22 +100,23 @@
         </div>
       </section>
 
-      <section class="main-content">
+     <!--Блок чим ми займаємося-->
+
+      <section class="section work-section">
         <div class="container">
-          <!--Блок чим ми займаємося-->
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="listone">
-            <li>
+          <h2 class="post-title">Чим ми займаємося</h2>
+          <ul class="listone site-activities">
+            <li class="site-activities-image" >
               <img src="./images/img4.jpg" alt="Написання коду" width="370" />
             </li>
-            <li>
+            <li class="site-activities-image">
               <img
                 src="./images/img5.jpg"
                 alt="Написання коду для смартфону"
                 width="370"
               />
             </li>
-            <li>
+            <li class="site-activities-image">
               <img
                 src="./images/img6.jpg"
                 alt="Планшет з набором кольорів"
@@ -126,12 +127,15 @@
         </div>
       </section>
 
-      <section class="team">
-        <!--Блок наша команда-->
+
+       <!--Блок наша команда-->
+
+      <section class="section team">
+       
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="listone">
-            <li>
+          <h2 class="post-title">Наша команда</h2>
+          <ul class="listone site-team">
+            <li class="site-team-card">
               <img
                 src="./images/img.jpg"
                 alt="чоловік в окулярах"
@@ -141,7 +145,7 @@
               <p class="team-position">Product Designer</p>
             </li>
 
-            <li class="team-member-card">
+            <li class="site-team-card">
               <img
                 src="./images/img1.jpg"
                 alt="Блондинка в окулярах "
@@ -151,7 +155,7 @@
               <p class="team-position">Frontend Developer</p>
             </li>
 
-            <li class="team-member-card">
+            <li class="site-team-card">
               <img
                 src="./images/img2.jpg"
                 alt="чоловік з бородою"
@@ -161,7 +165,7 @@
               <p class="team-position">Marketing</p>
             </li>
 
-            <li class="team-member-card">
+            <li class="site-team-card">
               <img
                 src="./images/img3.jpg"
                 alt="чоловік в окулярах з бородою"
@@ -175,16 +179,19 @@
       </section>
     </main>
 
+   <!--Підвал сторінки-->
+
     <footer class="footer">
-      <!--Підвал сторінки-->
       <div class="container">
-        <a
+        <a href="" class="logo footer-logo"
           ><span class="logoweb">Web</span
           ><span class="logostudiof">Studio</span></a
         >
 
-        <ul>
-          <li class="list">
+
+        <address class="address">
+        <ul class="list footer-address">
+          <li class="footer-link">
             <a
               href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
               target="_blank"
@@ -193,17 +200,18 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li class="list">
+          <li class="footer-link">
             <a href="mailto:info@devstudio.com" class="foter-link-item"
               >info@devstudio.com</a
             >
           </li>
-          <li class="list">
+          <li class="footer-link">
             <a href="tel:+380961111111" class="foter-link-item"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+      </address>  
       </div>
     </footer>
   </body>
