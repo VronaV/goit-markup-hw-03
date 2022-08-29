@@ -23,7 +23,7 @@
     <!--Верхня частина-->
 
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a
             ><span class="logoweb">Web</span
@@ -36,8 +36,9 @@
             </li>
             <li class="list"><a href="">Контакти</a></li>
           </ul>
+        </nav> 
 
-          <ul class="list">
+          <ul class="list site-header">
             <li>
               <a href="mailto:info@devstudio.com" class="header-link-item"
                 >info@devstudio.com</a
@@ -49,7 +50,7 @@
               >
             </li>
           </ul>
-        </nav>
+        
       </div>
     </header>
 
@@ -131,7 +132,6 @@
        <!--Блок наша команда-->
 
       <section class="section team">
-       
         <div class="container">
           <h2 class="post-title">Наша команда</h2>
           <ul class="listone site-team">
@@ -141,8 +141,10 @@
                 alt="чоловік в окулярах"
                 width="270"
               />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-position">Product Designer</p>
+              <div class="member-caption">
+              <h3 class="team-member-name">Ігор Дем'яненко</h3>
+              <p class="team-member-position">Product Designer</p>
+            </div>
             </li>
 
             <li class="site-team-card">
@@ -151,8 +153,10 @@
                 alt="Блондинка в окулярах "
                 width="270"
               />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-position">Frontend Developer</p>
+             <div class="member-caption">
+               <h3 class="team-member-name">Ольга Рєпіна</h3>
+               <p class="team-member-position">Frontend Developer</p>
+             </div>
             </li>
 
             <li class="site-team-card">
@@ -161,8 +165,10 @@
                 alt="чоловік з бородою"
                 width="270"
               />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-position">Marketing</p>
+             <div class="member-caption">
+               <h3 class="team-member-name">Микола Тарасов</h3>
+               <p class="team-member-position">Marketing</p>
+             </div>
             </li>
 
             <li class="site-team-card">
@@ -171,8 +177,10 @@
                 alt="чоловік в окулярах з бородою"
                 width="270"
               />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-position">UI Designer</p>
+               <div class="member-caption">
+               <h3 class="team-member-name">Михайло Єрмаков</h3>
+               <p class="team-member-position">UI Designer</p>
+             </div>
             </li>
           </ul>
         </div>
@@ -188,7 +196,6 @@
           ><span class="logostudiof">Studio</span></a
         >
 
-
         <address class="address">
         <ul class="list footer-address">
           <li class="footer-link">
@@ -201,12 +208,12 @@
             >
           </li>
           <li class="footer-link">
-            <a href="mailto:info@devstudio.com" class="foter-link-item"
+            <a href="mailto:info@devstudio.com" class="footer-link-item"
               >info@devstudio.com</a
             >
           </li>
           <li class="footer-link">
-            <a href="tel:+380961111111" class="foter-link-item"
+            <a href="tel:+380961111111" class="footer-link-item"
               >+38 096 111 11 11</a
             >
           </li>
